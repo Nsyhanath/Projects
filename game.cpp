@@ -1,10 +1,4 @@
-// Test game.cpp file becuase compiler is not detecting the file (I declared the functions in the header file and it compiled)
-//
-//
-//
-//
-//
-/* #include "header.h"
+#include "header.h"
 
 void makePiles(vector<int>& pilesTest, gameInfo& settings)
 {
