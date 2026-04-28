@@ -1,7 +1,6 @@
-#ifndef MESA_CISC187_HEADER_H
-#define MESA_CISC187_HEADER_H
-//Nathan Syhanath
-//5550040484
+#ifndef HEADER_H
+#define HEADER_H
+
 #include <iostream>
 #include <string>
 #include <vector>
@@ -190,44 +189,6 @@ std::pair<int, int> computer_move(vector<int>& piles)
   {
      if (piles[i] > 0) return std::pair<int, int>{i, 1};
   }
-
-  /*for (int i = 0; i < piles.size(); i++)
-  {
-    //try every bitshift
-    if (piles[i] > 0) 
-    {
-      int stones = piles[i] >> 1;
-      bool include_zero = false;                                            //
-      while (!include_zero)
-      {    
-        int sum = 0;
-        for (int j = 0; j < i; j++)
-        {
-          sum ^= piles[j];
-        }
-        sum ^= stones;
-        for (int j = i + 1; j < piles.size(); j++)
-        {
-          sum ^= piles[j];
-        }
-        //found value
-        if (sum == 0)
-        {
-          return std::pair<int, int>{i, piles[i] - stones };
-        }
-        if (stones == 0)
-        {
-          include_zero = true;
-        }
-        stones >>= 1;
-      }
-    }
-  }
-  //no move
-  for (int i = 0; i < piles.size(); i++)
-  {
-    if (piles[i] > 0) return std::pair<int, int>{i, 1};
-  }*/
 }
 
 //game
