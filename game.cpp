@@ -251,5 +251,4 @@ void game(gameInfo& settings)
       break;
     }
 }
-*/
 
